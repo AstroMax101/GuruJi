@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HB-5 - A-MAX</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+        .mySlides {display:none;}
+    </style>
+
+</head>
+
+<body onload="LOAD()">
+
+    <script>
+
+        function LOAD() {
+      
+      alert("Happy Birthday Guru Ji");
+      
+    }
+    
+    </script>
+
+<div class="container">
+
+    <center>
+
+    <b> <i> <h2>Happy Birthday GuruJi </i> </b> 🍰🍕🎂🎉</h2>
+
+    <div class="img1"></div>
+
+    
+        <img src="GuruJi.jpg" alt="Happy Birthday" class="responsive" width="600" height="400">
+    
+
+    </div>
+
+</center>
+
+<center>
+
+
+        <div class="text">
+            <h2> <b> <i>"Wishing my homie a very happy birthday - here's to another year of adventures and unforgettable moments! 
+                I hope this year brings you everything you've been hoping for and more. Let's make this birthday one to remember!"</b> </i> </h2>
+        </div>
+    
+
+    <div>
+
+        <audio id="audio">
+            <source src="Birthday-Party-Rock.mp3" type="audio/mpeg">
+        </audio>
+    
+        <button id="playPauseBTN" onclick="playPause()">Play ►</button>
+
+    </div>
+
+
+</center>
+
+</div>
+
+<script>
+
+var audio = document.getElementById('audio');
+var playPauseBTN = document.getElementById('playPauseBTN');
+var count = 0;
+
+function playPause(){
+if(count == 0){
+count = 1;
+audio.play();
+playPauseBTN.innerHTML = "Pause ⏸";
+}else{
+count = 0;
+audio.pause();
+playPauseBTN.innerHTML = "Play ►";
+}
+
+}
+
+</script>
+
+<script src="js/custom.js"></script>
+
+
+
+
+    <div class="w3-content w3-section" style="max-width:500px"> 
+
+        <img class="mySlides" src="Train1.PNG" style="width:100%" >
+        <img class="mySlides" src="Train2.PNG" style="width:100%" >
+        <img class="mySlides" src="train3.PNG" style="width:100%" >
+        <img class="mySlides" src="Train4.PNG" style="width:100%" >
+
+    </div>
+
+
+
+      <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 3000); // Change image every 2 seconds
+        }
+        </script>
+
+</center>
+        
+
+  
+
+
+</body>
+</html>
